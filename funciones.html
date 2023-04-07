@@ -2,11 +2,21 @@
 
 <script>
 
-    var anho = 2023;
-    var saltoDeLinea = "<br><br><br>"
     
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    var anho = 2023;
+    var saltoDeLinea = ("<br><br><br>");
+
+
         document.write("Juan tiene: " + (anho-2000) + " años");
-        document.write(saltoDeLinea);
+        saltarLinea();
         document.write("Pedro tiene: " + (anho-1995) + " años");
         
     anho = 2030
@@ -14,17 +24,17 @@
         document.write(saltoDeLinea);
         document.write("Carlos tiene: " + (anho-2005) + " años");
         
-        document.write(saltoDeLinea);
+        saltarLinea();
      
 
     anho = 2020
 
         document.write("Jimena tiene: " + (anho-2010) + " años");
-        document.write(saltoDeLinea);
+        saltarLinea();
         document.write("Paola tiene: " + (anho-1995) + " años");
-        document.write(saltoDeLinea);
+        saltarLinea();
         document.write("Laura tiene: " + (anho-2005) + " años");
-        document.write(saltoDeLinea);
+        saltarLinea();
 
     var edadPaola = 25;
     var edadJimena = 10;
@@ -38,7 +48,6 @@
     var promedio = (edadJimena+edadLaura+edadPaola)/3
 
         document.write("El promedio de las edades de las 3 mujeres es de " + nombre1 + ", " + nombre2 +" y " + nombre3 + " es de " + Math.round(promedio) + " años");
-        document.write(saltoDeLinea);
+        saltarLinea();
     </script>
 
-    
